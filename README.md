@@ -37,7 +37,7 @@ If you need to upgrade the Frida Server version in the future, just run the ``` 
 
 
 ## Screenshot
-![logo-autofrida](https://github.com/darklotuskdb/auto-launch-frida-server/assets/29382875/47b73d38-b216-4ff3-ae35-0571b02fcb92)
+![logo-autofrida-new](https://github.com/darklotuskdb/auto-launch-frida-server/assets/29382875/cead500d-9e83-4ee7-8acb-1093673d4867)
 
 
 ## About Me
