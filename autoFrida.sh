@@ -19,8 +19,6 @@ apt-get update
 pkg install root-repo
 apt-get install -y git curl wget command-not-found sed
 
-read -p 
-
 mkdir -p downloads
 
 arc="arm64"
@@ -28,6 +26,7 @@ arc="arm64"
 echo -e "\e[32m[+] Downloading latest Frida server\e[0m"
             
             latestBuild=$(curl --silent "https://api.github.com/repos/frida/frida/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+            echo "Latest Frida Version: $latestBuild"
             link="https://github.com/frida/frida/releases/download/${latestBuild}/frida-server-${latestBuild}-android-${arc}.xz" 
             cd downloads
             wget "$link"
