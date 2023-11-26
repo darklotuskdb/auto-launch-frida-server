@@ -17,7 +17,7 @@ echo -e "\e[33m By Kamaldeep Bhati (@DarkLotusKDB) <3\n\e[0m"
 #termux-setup-storage
 apt-get update
 pkg install root-repo
-apt-get -y git curl wget command-not-found sed
+apt-get install -y git curl wget command-not-found sed
 
 read -p 
 
