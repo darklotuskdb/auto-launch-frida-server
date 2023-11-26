@@ -24,3 +24,26 @@ git clone https://github.com/darklotuskdb/auto-launch-frida-server.git && cd aut
 ```
 ./autoFrida.sh
 ```
+Now, close the Termux application, relaunch it, and then test the Objection tool. Observe that everything works smoothly.
+
+**Next time you wish to run the Frida Server, simply launch the Termux application. It will automatically start the frida-server in the background along with the launch of the Termux application.**
+
+If you need to upgrade the Frida Server version in the future, just run the ``` ./autoFrida.sh ``` script.
+
+
+## Screenshot
+![logo-autofrida](https://github.com/darklotuskdb/auto-launch-frida-server/assets/29382875/47b73d38-b216-4ff3-ae35-0571b02fcb92)
+
+
+## About Me
+
+* **DarkLotus** - *Cyber Security Researcher* - [DarkLotusKDB](https://github.com/darklotuskdb)
+
+### Social Media Handles
+* [Twitter](https://twitter.com/darklotuskdb)
+* [Medium](https://medium.com/@darklotus)
+* [Linkedin](https://www.linkedin.com/in/kamaldeepbhati/)
+* [Instagram](https://www.instagram.com/kamaldeepbhati/)
+
+[BuyMeACoffee](https://www.buymeacoffee.com/darklotus) If you like my work <3
+
