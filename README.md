@@ -6,6 +6,7 @@ First, download and install Termux android application from the following link:
 ```
 https://f-droid.org/en/packages/com.termux/
 ```
+Launch the Termux application and execute the following commands 
 ```
 termux-setup-storage
 ```
@@ -15,7 +16,7 @@ pkg upgrade
 ```
 pkg install root-repo
 ```
-Note: If the above command does not work then select the root repo manually via inbuild Termux command i.e ``` termux-change-repo ``` and rerun the above command. 
+Note: If the above command does not work then select the root repo manually via inbuild Termux command i.e ``` termux-change-repo ``` and re-run the above command. 
 ```
 apt-get update
 ```
