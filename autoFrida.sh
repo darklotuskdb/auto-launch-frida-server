@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo 
-echo -e '\e[31m
+echo -e "\e[31m
      _         _          
     / \  _   _| |_ ___    
    / _ \| | | | __/ _ \   
@@ -13,7 +13,7 @@ echo -e '\e[31m
  |  _|| |  | | (_| | (_| |
  |_|  |_|  |_|\__,_|\__,_|
                           
-\e]0m'
+\e]0m"
 												   
 echo -e "\e[33m By Kamaldeep Bhati (@DarkLotusKDB) <3\n\e[0m"
 
