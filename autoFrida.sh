@@ -55,7 +55,7 @@ echo -e "\n\n\e[32m[+] Configuring Frida server auto start\e[0m"
     sed -i '/frida-server/d' .bashrc &> /dev/null
     sed -i '/H && sh/d' .bashrc &> /dev/null
     echo -e 'su -c "/data/data/com.termux/files/home/auto-launch-frida-server/frida-server -D &"\nsu -c "export PATH=/data/data/com.termux/files/usr/bin:$PATH && sh"' >> .bashrc
-source .bashrc
+
 echo -e '\n\e[33m[*] Done, All Set!!'
 
 echo
@@ -63,4 +63,5 @@ echo -e "Thank You,\nKamaldeep Bhati (@DarkLotusKDB)"
 echo
 echo -e "\e[31mHappy Hacking :-)\e[0m"
 echo
+source .bashrc
 
