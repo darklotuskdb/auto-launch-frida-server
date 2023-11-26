@@ -24,12 +24,23 @@ apt-get install -y git curl wget command-not-found sed
 
 mkdir -p downloads
 
-arc="arm64"
+
+
+a=$(uname -m)
+
+if [[ "$a" == "aarch64" ]] ; then
+    arc="arm64"
+else
+arc="$a"
+fi
+
+
 
 echo -e "\n\n\e[32m[+] Downloading latest Frida server\e[0m"
             
             latestBuild=$(curl --silent "https://api.github.com/repos/frida/frida/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
-            echo "Latest Frida Version: $latestBuild"
+            echo -e "\n[*] Latest Frida Server Version:\e[33m $latestBuild \e[0m"
+            echo -e "[*] Android Architecture:\e[33m $arc \e[0m\n\n"
             link="https://github.com/frida/frida/releases/download/${latestBuild}/frida-server-${latestBuild}-android-${arc}.xz" 
             cd downloads
             wget "$link"
@@ -45,7 +56,7 @@ echo -e "\n\n\e[32m[+] Configuring Frida server auto start\e[0m"
     sed -i '/H && sh/d' .bashrc &> /dev/null
     echo -e 'su -c "/data/data/com.termux/files/home/auto-launch-frida-server/frida-server -D &"\nsu -c "export PATH=/data/data/com.termux/files/usr/bin:$PATH && sh"' >> .bashrc
 source .bashrc
-echo -e '\nDone, All Set!!'
+echo -e '\n\e[33m[*] Done, All Set!!'
 
 echo
 echo -e "Thank You,\nKamaldeep Bhati (@DarkLotusKDB)"
