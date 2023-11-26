@@ -2,6 +2,10 @@
 The process involves downloading the latest version and automatically configuring it within the Termux Android application. Subsequently, upon launching the Termux application, Frida Server is initiated automatically to facilitate penetration testing.
 
 # Installation
+First, download and install Termux android application from the following link:
+```
+https://f-droid.org/en/packages/com.termux/
+```
 ```
 termux-setup-storage
 ```
