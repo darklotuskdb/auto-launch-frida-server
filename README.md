@@ -1,6 +1,15 @@
 # Auto Launch Frida Server
 The process involves downloading the latest version and automatically configuring it within the Termux Android application. Subsequently, upon launching the Termux application, Frida Server is initiated automatically to facilitate penetration testing.
 
+
+# What sets it apart from others?
+1. Initiates the Frida server automatically, eliminating the need for manual interactions.
+2. Streamlines the process of switching between various Frida server versions.
+3. Automatically resolves any issues related to the Frida server.
+4. Frees up space by automatically removing old and unused Frida server files.
+5. Chooses the appropriate Frida server based on the Android architecture.
+
+
 # Installation
 First, download and install Termux android application from the following link:
 ```
