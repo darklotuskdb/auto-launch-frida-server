@@ -41,6 +41,25 @@ echo -e "\n\n\e[32m[+] Downloading latest Frida server\e[0m"
             latestBuild=$(curl --silent "https://api.github.com/repos/frida/frida/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
             echo -e "\n[*] Latest Frida Server Version:\e[33m $latestBuild \e[0m"
             echo -e "[*] Android Architecture:\e[33m $arc \e[0m\n\n"
+
+     	while true; do
+                read -rp "$(echo -e "\e[33m\n[*] Do you want to download a different Frida server version? [y/n]: \e[0m")" -e answer
+                echo
+
+                if [[ $answer =~ ^[Yy]$ ]]; then
+                    read -rp "$(echo -e "\e[93m\n[*] Provide the Frida server version to download: \e[0m")" -e latestBuild
+                    echo -e "\n\e[93m[*] Downloading Frida server version:\e[0m $latestBuild"
+	                break
+                elif [[ $answer =~ ^[Nn]$ ]]; then
+                    break
+
+                else
+                    echo -e "Invalid input. Please enter 'y' for yes or 'n' for no.\n"
+                fi
+            done
+
+
+     
             link="https://github.com/frida/frida/releases/download/${latestBuild}/frida-server-${latestBuild}-android-${arc}.xz" 
             cd downloads
             wget "$link"
