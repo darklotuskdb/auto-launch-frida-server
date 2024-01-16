@@ -11,7 +11,7 @@ The process involves downloading the latest version and automatically configurin
 
 
 # Youtube Video Link
-[https://www.youtube.com/watch?v=stFytf3YEH0](url)
+[Termux | Automatically Start Frida Server on Rooted Android Phones | Easily Switch Between Version](https://www.youtube.com/watch?v=stFytf3YEH0)
 
 
 # Installation
