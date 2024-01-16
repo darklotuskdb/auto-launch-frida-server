@@ -11,7 +11,7 @@ The process involves downloading the latest version and automatically configurin
 
 
 # Youtube Video Link
-![video-autofrida-new](https://www.youtube.com/watch?v=stFytf3YEH0)
+[https://www.youtube.com/watch?v=stFytf3YEH0](url)
 
 
 # Installation
