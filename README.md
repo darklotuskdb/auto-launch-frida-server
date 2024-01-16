@@ -10,6 +10,10 @@ The process involves downloading the latest version and automatically configurin
 5. Chooses the appropriate Frida server based on the Android architecture.
 
 
+# Youtube Video Link
+![video-autofrida-new](https://www.youtube.com/watch?v=stFytf3YEH0)
+
+
 # Installation
 First, download and install Termux android application from the following link:
 ```
