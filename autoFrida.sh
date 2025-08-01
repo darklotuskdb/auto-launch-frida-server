@@ -73,7 +73,7 @@ echo -e "\n\n\e[32m[+] Configuring Frida server auto start\e[0m"
     mv .bashrc .oldbashrc &> /dev/null
     sed -i '/frida-server/d' .bashrc &> /dev/null
     sed -i '/H && sh/d' .bashrc &> /dev/null
-    echo -e 'su -c "/data/data/com.termux/files/home/auto-launch-frida-server/frida-server -D &"\nsu -c "export PATH=/data/data/com.termux/files/usr/bin:$PATH && sh"' >> .bashrc
+    echo -e 'sudo /data/data/com.termux/files/home/auto-launch-frida-server/frida-server -D &"\nsudo su\n#su -c "export PATH=/data/data/com.termux/files/usr/bin:$PATH && sh"' >> .bashrc
 
 echo -e '\n\e[33m[*] Done, All Set!!'
 
