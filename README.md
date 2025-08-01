@@ -26,15 +26,17 @@ termux-setup-storage
 ```
 pkg upgrade
 ```
+<!--
 ```
 pkg install root-repo
 ```
 Note: If the above command does not work then select the root repo manually via inbuild Termux command i.e ``` termux-change-repo ``` and re-run the above command. 
 ```
+-->
 apt-get update
 ```
 ```
-apt-get install -y git curl wget sed xz-utils command-not-found
+apt-get install -y git curl wget sed xz-utils command-not-found sudo
 ```
 ```
 git clone https://github.com/darklotuskdb/auto-launch-frida-server.git && cd auto-launch-frida-server && chmod +x autoFrida.sh
